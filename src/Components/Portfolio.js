@@ -3,45 +3,31 @@ import Slide from "react-reveal"
 
 class Portfolio extends Component {
   render() {
-    if (!this.props.data) return null;
-
-    
 
     return (
-      <section id="resume">
+      <section id="portfolio">
         <Slide left duration={1300}>
           <div className="row work">
             <div className="three columns header-col">
               <h1>
-                <span>CHANNEL DEVELOPMENT</span>
+              <span>CHANNEL MANAGEMENT</span>
               </h1>
             </div>
 
             <div className="nine columns main-col">
-            <div key="ChannelDevelopement">
+            <div key="FocusedMaketing">
             
-            <p>
-            <span>&bull;</span>  <b>Emerging Growth</b>: This phase refers to times when a company is building a new sales channel, which includes various activities such as to recruit and involve these partners successfully. In the emerging phase, companies are usually engaged in making proper plans and procedures to make sure that everything is in place
-            <br></br>
-            <span>&bull;</span>  <b>Scaling</b>: Satisfy customer’s specific needs through a required product or service. The product or service should comply with the requirements and preferences of a customer when it’s consumed.
-            <br></br>
-            <span>&bull;</span>  <b>Continuous Improvement</b>: The scaling process is a never-ending process unless a company doesn’t want to progress. To keep on the scaling process requires major investments or expansions after when a company has reached a plateau point.<br></br>
-            <span>&bull;</span>  <b>Sub-Optimized</b>: Sub-optimized is the only phase that prevents a company from generating revenue and increasing outreach.<br></br>
-            </p>
-            <br></br>
             <br></br>
             <p>
-              <b>Advantages of Sales Channel development</b>
-              <br></br>
-              <span>&bull;</span> Effective selling <br></br>
-              <span>&bull;</span> Low marketing, sales, and distribution cost <br></br>
-              <span>&bull;</span> Low investment for venturing into a new market  <br></br>
+            The term Channel Management is widely used in sales marketing parlance. It is defined as a process where the company develops various marketing techniques as well as sales strategies to reach the widest possible customer base. The channels are nothing but ways or outlets to market and sell products. The ultimate aim of any organization is to develop a better relationship between the customer and the product.
             </p>
-          </div>
-            </div>
+            <br></br>
+            <p>
+            Channel management helps in developing a program for selling and servicing customers within a specific channel. The aim is to streamline communication between a business and the customer. To do this, you need to segment your channels according to the characteristics of your customers: their needs, buying patterns, success factors, etc. and then customize a program that includes goals, policies, products, sales, and marketing program (1). The goal of channel management is to establish direct communication with customers in each channel. If the company is able to effectively achieve this goal, the management will have a better idea which marketing channel best suits that particular customer base. The techniques used in each channel could be different, but the overall strategy must always brand the business consistently throughout the communication
+            </p>
+          </div></div>
           </div>
         </Slide>
-
       </section>
     );
   }

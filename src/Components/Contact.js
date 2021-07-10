@@ -3,151 +3,36 @@ import { Fade, Slide } from "react-reveal";
 
 class Contact extends Component {
   render() {
-    if (!this.props.data) return null;
-
-    const name = this.props.data.name;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const message = this.props.data.contactmessage;
 
     return (
       <section id="contact">
-        <Fade bottom duration={1000}>
-          <div className="row section-head">
-            <div className="two columns header-col">
+       <Slide left duration={1300}>
+          <div className="row work">
+            <div className="three columns header-col">
               <h1>
-                <span>Get In Touch.</span>
+                <span>TRAINNING & DEVELOPMENT OF SALES TEAMS</span>
               </h1>
             </div>
 
-            <div className="ten columns">
-              <p className="lead">{message}</p>
+            <div className="nine columns main-col">
+            <div key="ChannelDevelopement">
+            <p>One of the best ways to improve results in any sales organization is through a strategic, structured training program. What many sales managers find difficult however, is deciding on what training is needed, how much of it is needed and how frequently. Combine this with time constraints and many managers end up opting for the classic two-day, intensive sales seminar where your staff sit around listening to an ‘expert’ tell them stuff they either know already or will have forgotten by the time they get back to their hotel that evening.</p>
+            <br></br>
+            <br></br> 
+            <p>
+            <span>&bull;</span>  <b>Start with the basics</b>: There are some skills that transcend industry, product or sales methodology. Ensuring that your sales team is well-versed in the basic foundations of successful selling is something many managers overlook, as are the practicalities of simply navigating the tools and systems your salespeople are expected to use
+            <br></br>
+            <span>&bull;</span>  <b>E-learning and online seminars</b>: Shipping your entire sales team off to a training course is simply not practical, as this means your sales process stops for the duration of this session. This approach is also predicated on the assumption that all of your team members have exactly the same needs.
+            <br></br>
+            <span>&bull;</span>  <b>Forget the crash course approach</b>: Research has shown that without systematic, regular learning and reinforcement, approximately 70% of what people are being taught is forgotten within 24 hours.<br></br>
+            <span>&bull;</span>  <b>Keep it practical - let them learn in the field</b>: It is vital that any training your sales team undergoes has a strong practical side and that this relates specifically to your own company, sales process, and product or service. When people notice an immediate positive impact on their daily experience, it becomes much easier to keep them motivated to complete a lengthy training schedule. This also ties in with point one above. You’ll often reap the largest rewards simply by training your staff to effectively use the systems and tools that are already in place at your company. If you manage to get your team to the point where they enjoy using the tools you give them, you will greatly increase productivity and the quality of records inside your business.<br></br>
+
+            <span>&bull;</span>  <b>The numbers matter - keep an eye on them</b>: Sales is the ultimate results-driven activity, and this approach should also underpin any training program you develop. Look at the data regularly rather than just going on subjective feedback. Is the training actually bringing the results you expected during planning? Your team may be loving their regular seminars on the importance of posture and a nice view while conducting a sales call, but if there’s no change in your results you’re most likely wasting everybody’s time.<br></br>
+            </p>
+          </div>
             </div>
           </div>
-        </Fade>
-
-        <div className="row">
-          <Slide left duration={1000}>
-            <div className="eight columns">
-              <form action="" method="post" id="contactForm" name="contactForm">
-                <fieldset>
-                  <div>
-                    <label htmlFor="contactName">
-                      Name <span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactName"
-                      name="contactName"
-                      onChange={this.handleChange}
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contactEmail">
-                      Email <span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactEmail"
-                      name="contactEmail"
-                      onChange={this.handleChange}
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contactSubject">Subject</label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactSubject"
-                      name="contactSubject"
-                      onChange={this.handleChange}
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contactMessage">
-                      Message <span className="required">*</span>
-                    </label>
-                    <textarea
-                      cols="50"
-                      rows="15"
-                      id="contactMessage"
-                      name="contactMessage"
-                    ></textarea>
-                  </div>
-
-                  <div>
-                    <button className="submit">Submit</button>
-                    <span id="image-loader">
-                      <img alt="" src="images/loader.gif" />
-                    </span>
-                  </div>
-                </fieldset>
-              </form>
-
-              <div id="message-warning"> Error boy</div>
-              <div id="message-success">
-                <i className="fa fa-check"></i>Your message was sent, thank you!
-                <br />
-              </div>
-            </div>
-          </Slide>
-
-          <Slide right duration={1000}>
-            <aside className="four columns footer-widgets">
-              <div className="widget widget_contact">
-                <h4>Address and Phone</h4>
-                <p className="address">
-                  {name}
-                  <br />
-                  {street} <br />
-                  {city}, {state} {zip}
-                  <br />
-                  <span>{phone}</span>
-                </p>
-              </div>
-
-              <div className="widget widget_tweets">
-                <h4 className="widget-title">Latest Tweets</h4>
-                <ul id="twitter">
-                  <li>
-                    <span>
-                      This is Photoshop's version of Lorem Ipsum. Proin gravida
-                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                      quis bibendum auctor, nisi elit consequat ipsum
-                      <a href="./">http://t.co/CGIrdxIlI3</a>
-                    </span>
-                    <b>
-                      <a href="./">2 Days Ago</a>
-                    </b>
-                  </li>
-                  <li>
-                    <span>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi
-                      <a href="./">http://t.co/CGIrdxIlI3</a>
-                    </span>
-                    <b>
-                      <a href="./">3 Days Ago</a>
-                    </b>
-                  </li>
-                </ul>
-              </div>
-            </aside>
-          </Slide>
-        </div>
+        </Slide>
       </section>
     );
   }

@@ -20,7 +20,7 @@ class Header extends Component {
           <ul id="nav" className="nav">
             <li className="current">
               <a className="smoothscroll" href="#home">
-                Reach Marketing
+                Home
               </a>
             </li>
 
@@ -53,10 +53,10 @@ class Header extends Component {
         <div className="row banner">
           <div className="banner-text">
             <Fade bottom>
-              <h1 className="responsive-headline">market vibes</h1>
+              <h1 className="responsive-headline">marketing vibes</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>People don’t buy what you do, they buy why you do it</h3>
+            <h3>People don’t buy what you do, they buy why you do it</h3>
             </Fade>
             <hr />
           </div>

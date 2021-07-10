@@ -3,33 +3,43 @@ import Fade from "react-reveal";
 
 class Footer extends Component {
   render() {
-    if (!this.props.data) return null;
 
-    const networks = this.props.data.social.map(function (network) {
-      return (
-        <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
-          </a>
-        </li>
-      );
-    });
+    // const networks = 
+    //   return (
+    //     <li key="facebook">
+    //       <a href="#">
+    //         <i className="fa fa-facebook"></i>
+    //       </a>
+    //     </li>
+    //   );
+    // }
 
     return (
       <footer>
+
+       <li key="facebook">
+          <a href="#">
+            <i className="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li key="instagram">
+          <a href="#">
+            <i className="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li key="twitter">
+          <a href="#">
+            <i className="fa fa-twitter"></i>
+          </a>
+        </li>
+
         <div className="row">
           <Fade bottom>
             <div className="twelve columns">
-              <ul className="social-links">{networks}</ul>
+              <ul className="social-links"></ul>
 
               <ul className="copyright">
-                <li>&copy; Copyright 2021 Nordic Giant</li>
-                <li>
-                  Design by{" "}
-                  <a title="Styleshout" href="http://www.styleshout.com/">
-                    Styleshout
-                  </a>
-                </li>
+                <li>&copy; Copyright 2021</li>
               </ul>
             </div>
           </Fade>
